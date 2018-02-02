@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from  extract_exif_data import ImageMetaData
-from remove_empty_folders import removeEmptyFolders
+from modules.extract_exif_data import ImageMetaData
+from modules.remove_empty_folders import removeEmptyFolders
 
 import os
 from datetime import datetime, timedelta
@@ -199,10 +199,3 @@ for key, chunk in chunks.items():
 # Удаляем пустые директории
 # TODO Сделать рекурсивное удаление снизу
 removeEmptyFolders(src)
-
-
-
-
-
-
-

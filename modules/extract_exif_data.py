@@ -23,7 +23,7 @@ class ImageMetaData(object):
         exif_data = {}
         info = self.image._getexif()
         if info:
-            for tag, value in info.items():
+            for tag, value in list(info.items()):
                 decoded = TAGS.get(tag, tag)
                 if decoded == "GPSInfo":
                     gps_data = {}
