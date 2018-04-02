@@ -5,9 +5,16 @@ DJI photo sort by EXIF GPS and reverse geocoding
 > DO NOT USE ON REAL DATA!!!
 > COPY DATA BEFORE USE THIS SCRIPT!!!
 
-# Usage
+## Requirements
+
+```
+sudo apt-get --no-install-recommends install python3-pip
+sudo apt-get install virtualenv
+```
+
+## Usage
 #### Install python3 virtual environment
-`virtualenv --python=/usr/bin/python3.5 venv`
+`virtualenv -p python3 venv`
 
 `. venv/bin/activate`
 
