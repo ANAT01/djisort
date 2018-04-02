@@ -180,12 +180,12 @@ def djisort(src, dst):
                                                "chunk" + str('{:02d}').format(chunknum) + '.csv')
                     csvfile = open(csvfilepath, 'w')
                 csvfile.write('{:f},{:f},{}'.format(fpool['lat'], fpool['lon'],
-                                                    ','.join(str(filepath.encode('utf-8')).split('/'))) + "\n")
+                                                    ','.join(str(filepath).split('/'))) + "\n")
 
                 # master csv
                 mastercsv = open(os.path.join(dst, 'master.csv'), 'a')
                 mastercsv.write('{:f},{:f},{}'.format(fpool['lat'], fpool['lon'],
-                                                      ','.join(str(filepath.encode('utf-8')).split('/'))) + "\n")
+                                                      ','.join(str(filepath).split('/'))) + "\n")
 
             else:
                 print("Already exist!!!!!")
